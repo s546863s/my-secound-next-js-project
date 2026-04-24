@@ -18,12 +18,15 @@ export const metadata = {
 };
 
 export default function RootLayout({ children }) {
+  console.log("This is layout")
   return (
     <html
       lang="en"
       
     >
       <body className="">
+        
+        <Navbar></Navbar>
         
   
 
