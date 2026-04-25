@@ -1,16 +1,17 @@
+// 'use client'
 import Albums from '@/component/Albums/Albums';
 import React, { Suspense } from 'react';
 
 const albumsPage = async () => {
     const albumsPromis = fetch("https://jsonplaceholder.typicode.com/albums").then(res => res.json());
 
-//    console.log(albumsPromis)
+    console.log(albumsPromis);
 
 
     return (
         <div>
             <Suspense>
-                <Albums albumsPromis={albumsPromis}></Albums>
+                <Albums albumsPromis={albumsPromis} ></Albums>
             </Suspense>
         </div>
     );
